@@ -1,0 +1,247 @@
+alert('selamat datang..');
+var lagi = true;
+
+while (lagi === true ) {
+    var nama = prompt('masukan nama:')
+    alert('halo ' + nama);
+
+    lagi = confirm('coba lagi?')
+}
+    alert('terima kasih..')
+
+----------------------------------------------------
+
+alert('mulai');
+for (let i = 0; i < 5; i++) {
+alert('Hello World!')
+    
+}
+alert('selesai');
+
+--------------------------------------
+
+    var jmlAngkot = 10;
+    var angkotBeroperasi = 6;
+    var noAngkot = 1;
+
+    while (noAngkot <=  angkotBeroperasi){
+        console.log('Angkot No. '+ noAngkot +' beroperasi dengan baik.');
+    noAngkot++;
+    }
+------------------------------------------
+var angka = prompt('Masukan angka: ');
+if (angka % 2 == 0) {
+    alert(angka + ' adalah bilangan GENAP');
+} else {
+    alert(angka + ' adalah bilangan GANJIL')
+}
+
+var angka = prompt('Masukan Angka : ');
+if(angka % 2 === 0){
+    alert(angka + ' Adalah bilangan GENAP');
+} else if (angka % 2 === 1){
+    alert(angka + ' adalah bilangan GANJIL');
+} else {
+   alert ('yang anda masukan bukan Angka!!');
+}
+----------------------------------------------------
+var jmlAngkot = 10;
+var angkotBeroperasi = 6;
+
+
+for ( var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++  ){
+
+    if (noAngkot <= 6 ) {
+        console.log('Angkot No. ' + noAngkot + ' beroperasi dengan baik.');
+    } else {
+        console.log('Angkot No. '+ noAngkot + ' tidak sedang beroperasi.');
+    }
+}
+
+var jmlAngkot = 10;
+var angkotBeroperasi = 6;
+
+
+for ( var noAngkot = 1; noAngkot <= jmlAngkot; noAngkot++  ){
+
+    if (noAngkot <= 6 && noAngkot !== 5 ) {
+        console.log('Angkot No. ' + noAngkot + ' beroperasi dengan baik.');
+   } else if (noAngkot === 8 || noAngkot === 10 || noAngkot === 5 ) {
+        console.log('Angkot No. '+ noAngkot + ' sedang lembur.');
+   } else {
+        console.log('Angkot No. '+ noAngkot + ' tidak sedang beroperasi.');
+    }
+}   
+------------------------------------------------------
+var angka = prompt('Masukan angka : ');
+
+if (angka == 1) {
+    alert('Anda memasukan angka 1');
+} else if (angka == 2) {
+    alert('Anda memasukan angka 2');
+} else if (angka == 3) {
+    alert('anda memasukan angka 3');
+} else {
+    alert('angka yang anda masukkan salah!');
+}
+-------------------------------------------------------
+var angka = prompt('Masukan angka : ');
+
+switch (angka) {
+    case '1':
+        alert('Anda memasukan angka 1');
+        break;
+    case '2':
+        alert('Anda memasukan angka 2');
+        break;
+    case '3':
+        alert('Anda memasukan angka 3');
+        break;
+
+    default:
+        alert('angka yang anda masukan salah!');
+        break;
+}
+
+var item = prompt('Masukan Film / Series favotitmu!(cth: Breaking Bad, Better Call Saul, Blank Mirror, Interstellar)');
+
+switch (item) {
+
+    case 'Breaking Bad':
+        alert('Breaking Bad adalah serial TV Amerika bertema drama kejahatan, ditulis dan diproduksi oleh Vince Gilligan. Acara ini disiarkan AMC selama 5 musim, dari 20 Januari 2008 sampai 29 September 2013. Src:Wikipedia');
+        break;
+
+    case 'Better Call Saul':
+        alert('Better Call Saul adalah seri drama televisi Amerika Serikat yang dibuat oleh Vince Gilligan dan Peter Gould. Seri ini merupakan turunan dari Breaking Bad yang juga dibuat oleh Gilligan.[1] Berlatar tahun 2002, Better Call Saul berkisah tentang seorang pengacara bernama James "Jimmy" McGill (Bob Odenkirk) enam tahun sebelum tampil di Breaking Bad; seri ini juga menjelajahi peristiwa selama dan sesudah era Breaking Bad. Src:Wikipedia');
+        break;
+
+    case 'Black Mirror':
+        alert('Black Mirror adalah seri antologi televisi Britania Raya besutan Charlie Brooker yang menceritakan kisah fiksi spekulatif dengan tema gelap dan satir mengenai masyarakat modern, terutama dampak buruk teknologi canggih. Seri ini diproduksi oleh Zeppotron untuk Endemol. Src:Wikipedia')
+        break;
+
+    case 'Interstellar':
+        alert('Interstellar adalah film fiksi ilmiah epos tahun 2014 yang disutradarai oleh Christopher Nolan dan diproduseri oleh Emma Thomas, Christopher Nolan dan Lynda Obst. Naskah film ini ditulis oleh Jonathan Nolan dan Christopher Nolan. Film ini dibintangi Matthew McConaughey, Anne Hathaway, Jessica Chastain dan Michael Caine. Filmnya bercerita tentang sekelompok astronaut yang menuju lubang cacing dekat Saturnus untuk mencari planet baru yang mampu merumahi manusia, ditengah era distopia. Src:Wikipedia')
+        break;
+
+    default:
+        alert('Anda memasukan nama Film / Series yang salah!')
+        break;
+}
+
+---------------------------------------------------------------------
+
+GAME SUIT JAWA MENGGUNAKAN JAVASCRIPT :
+
+var tanya = true;
+while (tanya) {
+
+    // Menangkap pilihan player
+
+    var p = prompt('pilihan : gajah, semut, orang');
+
+    // Menangkap pilihan komputer
+    // membangkitkan bilangan random
+    var comp = Math.random();
+
+    if (comp < 0.34) {
+        comp = 'gajah';
+    } else if (comp >= 0.34 && comp < 0.67) {
+        comp = 'orang';
+    } else {
+        comp = 'semut';
+    }
+    console.log(comp);
+
+    var hasil = '';
+    // menentukan rules
+
+    if (p == comp) {
+        hasil = 'SERI!';
+    } else if (p == 'gajah') {
+        // if (comp == 'orang') {
+        //     hasil = 'MENANG!';
+        // } else {
+        //     hasil = 'KALAH';
+        // }
+        hasil = (comp == 'orang') ? 'MENANG!' : 'KALAH!';
+    } else if (p == 'orang') {
+        hasil = (comp == 'gajah') ? 'KALAH!' : 'MENANG!';
+    } else if (p == 'semut') {
+        hasil = (comp == 'orang') ? 'KALAH!' : 'MENANG!';
+    } else {
+        hasil = 'Memasukan pilihan yang salah!'
+    }
+
+    // tampilkan hasil
+
+    alert('Kamu memilih : ' + p + ' dan komputer memilih ' + comp + '\nMaka hasilnya : kamu ' + hasil);
+
+    tanya = confirm(' lagi? ');
+}
+
+alert('Terimakasih sudah bermain!')
+
+---------------------------------
+var nama = "This is Saturday";
+console.log(nama.charAt(4));
+
+var bil = Math.random();
+console.log(bil);
+----------------------------------------------
+var a = 8;
+var b = 3;
+var volumeA;
+var volumeB;
+var total;
+
+volumeA = a * a * a;
+volumeB = b * b * b;
+
+total = volumeA + volumeB;
+
+console.log(total);
+
+__contoh dijalankan menggunakan fungsi, diatas adalah contoh dijalankan tanpa menggunakan fungsi__
+
+function jumlahVolumeDuaKubus(a, b) {
+    var volumeA;
+    var volumeB;
+    var total;
+
+    volumeA = a * a * a;
+    volumeB = b * b * b;
+
+    total = volumeA + volumeB;
+
+    return total;
+}
+
+alert(jumlahVolumeDuaKubus(6, 3));
+---------------------------------------------
+ffunction jumlahVolumeKubus(a, b) {
+
+    return a + b;
+}
+
+var a = parseInt(prompt('Masukan Nilai 1 : '));
+var b = parseInt(prompt('Masukan Nilai 2 : '));
+var hasil = jumlahVolumeKubus(a, b);
+
+console.log(hasil);
+----------------------------------------------
+function jumlahVolumeKubus(a, b) {
+
+    return a + b;
+}
+
+function kali(a, b) {
+    return a * b;
+}
+
+var hasil = kali(jumlahVolumeKubus(2, 1), jumlahVolumeKubus(5, 3))000000000000000000000;
+
+     
+console.log(hasil);
+
+Day 7 of #100DaysOfCode
+a good function is a function that only executes 1 command
