@@ -243,5 +243,15 @@ var hasil = kali(jumlahVolumeKubus(2, 1), jumlahVolumeKubus(5, 3))00000000000000
      
 console.log(hasil);
 
-Day 7 of #100DaysOfCode
-a good function is a function that only executes 1 command
+----------------------------------------------------------
+var a = 1
+// talk about variable scope 
+
+// Variable lokal
+function tes(a) {
+    console.log(a);
+}
+
+// variable global dengan var a diline 1
+tes(a);
+console.log(a);
