@@ -19,3 +19,21 @@ var myFunc = function () {
 // array multidimensi dimana terdapat array didalam array
 var myArr3 = ['teks', 2, false, myFunc, [1, 2, 3]];
 console.log(myArr3[4][1]);
+
+//cara menambahkan array
+var mhs = ['anggi'];
+mhs[1] = 'dany';
+mhs[2] = 'bambang';
+console.log(mhs);
+
+// cara menghapus array
+var mhs = ['anggi', 'dany'];
+mhs[1] = undefined;
+console.log(mhs);
+
+// menampilkan array menggunakan logic
+var mhs = ['anggi', 'dany', 'bambang', ];
+
+for (var i = 0; i < mhs.length; i++) {
+    console.log('mahasiswa ke-' + i + ':' + mhs[i]);
+};
