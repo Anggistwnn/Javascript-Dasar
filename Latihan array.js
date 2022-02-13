@@ -72,8 +72,8 @@
 // slice(indexAwal, indexAkhir);
 // index awal diambil index akhir dikurangi 1
 
-var mhs = ['anggi', 'dany', 'adewaliya', 'arisa', 'raihany'];
-var mhs2 = mhs.slice(2, 5);
-console.log(mhs2.join('-'));
+// var mhs = ['anggi', 'dany', 'adewaliya', 'arisa', 'raihany'];
+// var mhs2 = mhs.slice(2, 5);
+// console.log(mhs2.join('-'));
 // array lama
-console.log(mhs.join('-'));
+// console.log(mhs.join('-'));
