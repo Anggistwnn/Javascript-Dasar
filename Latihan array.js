@@ -77,3 +77,48 @@ var mhs2 = mhs.slice(2, 5);
 console.log(mhs2.join('-'));
 array lama
 console.log(mhs.join('-'));
+
+// 7. foreach 
+var angka = [1, 2, 3, 4, 5, 6, 7, 8];
+var nama = ["anggi", "dany", "bambang"]
+for (var i = 0; i < angka.length; i++) {
+    console.log(angka[i]);
+}
+// sama persis dengan yang ada pada for diatas
+// forEach=pada setiap
+
+// angka.forEach (untuk setiap elemen yang ada pada array angka)
+ (function (e) { (lakukan fungsi berikut ini)
+    console.log(e)
+}); 
+angka.forEach(function (e) {
+    console.log(e)
+// });
+// contoh lain
+nama.forEach(function (e, i) {
+    console.log('mahasiswa ke ' + (i + 1) + ' adalah : ' + e)
+})
+
+// 8. Map (sama dengan foreach tetapi lebih baik karna map membalikan angka sedangkan foreach tdk)
+// code dibawah jika diganti dengan angka.foreach itu tdk bisa
+var angka = [1, 2, 3, 4, 5, 6, 7];
+var angka2 = angka.map(function (e) {
+    return e * 2;
+});
+console.log(angka2.join('-'));
+
+// 8. sort (berguna untuk mengurutkan angka pada elemen yang ada)
+// tanpa angka 10
+var angka = [1, 2, 5, 3, 4, 8, 7, 6, 9];
+angka.sort();
+console.log(angka);
+// untuk mengatasi membaca perkarakter gunakan
+function (a, b) {
+    return a - b;
+})
+// dengan angka 10
+var angka = [1, 2, 5, 3, 4, 8, 7, 6, 9, 10];
+angka.sort(function (a, b) {
+    return a - b;
+})
+console.log(angka);
