@@ -66,7 +66,7 @@
 const p = document.querySelectorAll('p');
 // dibawah menggunakan looping 
 for (i = 0; i < p.length; i++) {
-    p[i].style.backgroundColor = 'lightgreen';
+    p[i].style.backgroundColor = 'lightblue';
 }
 // tanpa looping selector paragraf mana yang akan di ubah warna nya menggunakan index 
 // p[2].style.backgroundColor = 'lightblue';
