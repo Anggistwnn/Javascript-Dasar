@@ -1,4 +1,4 @@
-// DOM Selection
+// DOM Selection (Manipulasi Element)
 // mencari elemen html berdasarkan id
 
 // document.getElementById()
@@ -63,10 +63,37 @@
 // const p = document.querySelector('p');
 // p.innerHTML = 'ini diubah menggunakan JS';
 
-const p = document.querySelectorAll('p');
-// dibawah menggunakan looping 
-for (i = 0; i < p.length; i++) {
-    p[i].style.backgroundColor = 'lightblue';
-}
+// const p = document.querySelectorAll('p');
+// // dibawah menggunakan looping 
+// for (i = 0; i < p.length; i++) {
+//     p[i].style.backgroundColor = 'lightblue';
+// }
 // tanpa looping selector paragraf mana yang akan di ubah warna nya menggunakan index 
 // p[2].style.backgroundColor = 'lightblue';
+
+// ATTRIBUTE
+// menambahkan attribute pada tag dan selector
+// const judul = document.getElementsByTagName('h1')[0];
+// judul.setAttribute('name', 'anggi');
+
+// const a = document.querySelector('section#a a');
+// a.setAttribute('id', 'link');
+
+// menghapus attribute yang sudah digunakan menggunakan remove.Attribute('..');
+// CLASSLIST
+// const p2 = document.querySelector('.p2');
+// p2.classList.add('label');
+
+// p2.classList.toggle('label');
+// menambahkan juga, namun dapat mengetahui apakah class yang ditambahkan sudah ada atau belum, jika sudah'false' jika belum 'true'
+// code dibawah bisa digunakan untuk tombol tema dark and light. dengan catatan sudah memiliki class pada style.css('biru-muda');
+// document.body.classList.toggle('biru-muda');
+
+// p2.classList.add('label');
+// p2.classList.remove('label');
+// digunakan untuk mencari class yang ada yang dihitung dengan index
+// p2.classList.item(1);
+// digunakan untuk menanyakan apakah ada class dengan nama class (true or false)
+// p2.classList.contains(1); 
+
+// DOM Manipulation Part 2
