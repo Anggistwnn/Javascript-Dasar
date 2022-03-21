@@ -97,3 +97,37 @@
 // p2.classList.contains(1); 
 
 // DOM Manipulation Part 2
+// membuat element baru
+const pBaru = document.createElement('p');
+const teksPBaru = document.createTextNode('Paragraf Baru');
+// menyimpan yang diatas kedalam element baru, karna mereka belum terimplementasi pada tampilan hanya ada pada memory saja
+pBaru.appendChild(teksPBaru);
+// simpan PBaru di akhir section A, menggunakan code diatas
+
+// code dibawah menambahkan item diatara item pada section B, mengguanakan insert before yang juga menggunakan pseudo class css nth-child 
+const sectionA = document.getElementById('a');
+sectionA.appendChild(pBaru);
+
+const liBaru = document.createElement('li');
+const teksLiBaru = document.createTextNode('Item Baru');
+liBaru.appendChild(teksLiBaru);
+
+const ul = document.querySelector('section#b ul');
+const li2 = document.querySelector('li:nth-child(2)');
+
+ul.insertBefore(liBaru, li2);
+
+// menghilangkan element menggunakan removeChild
+const link = document.getElementsByTagName('a')[0];
+sectionA.removeChild(link);
+
+//code dibawah mengganti p4 menjadi element baru menggunakan replaceChild
+const sectionB = document.getElementById('b');
+const p4 = sectionB.querySelector('p');
+
+const h2Baru = document.createElement('h2');
+const teksh2Baru = document.createTextNode('Judul Baru!');
+
+h2Baru.appendChild(teksh2Baru);
+
+sectionB.replaceChild(h2Baru, p4);
