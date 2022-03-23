@@ -28,5 +28,53 @@ tAcakWarna.addEventListener('click', function () {
     document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ', ' + b + ')';
 });
 
-// menangkap slidernya  
+// menangkap slidernya  merah
 const sMerah = document.querySelector('input[name=sMerah]');
+// menangkap slider hijau
+const sHijau = document.querySelector('input[name=sHijau]');
+// menangkap slider biru
+const sBiru = document.querySelector('input[name=sBiru]');
+// membuat event listener slider merahnya 
+sMerah.addEventListener('input', function () {
+    // membuat variable 3 variablenya.value untuk mengaktifkan slidernya
+    const r = sMerah.value;
+    const g = sHijau.value;
+    const b = sBiru.value;
+    // memilih bagian mana yang akan diwarnai
+    document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+})
+// membuat event listener slider hijau
+sHijau.addEventListener('input', function () {
+    // membuat 3 variablenya.value untuk mengaktifkan slidernya
+    const r = sMerah.value;
+    const g = sHijau.value;
+    const b = sBiru.value;
+    // memilih bagian mana yang akan diwarnai
+    document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+
+})
+sBiru.addEventListener('input', function () {
+    // membuat 3 variablenya.value untuk mengaktifkan slidernya
+    const r = sMerah.value;
+    const g = sHijau.value;
+    const b = sBiru.value;
+    // memilih bagian mana yang akan diwarnai
+    document.body.style.backgroundColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+
+})
+
+// menangkap element body dna menggunakan mousemove
+document.body.addEventListener('mousemove', function (event) {
+    // event berguna sebagai untuk mengetahui kordinat sumbu x nya dan itu garus menempel disuatu objek yang akan di taro di function
+    // POSISI MOUSE X
+    // console.log(event.clientX);
+    // mengetahui ukuran dari browser
+    // console.log(window.innerWidth);
+    // membuat variable untuk mengetahui posisi kursor yang / lebar dari browsernya dan di * 255 yang berfungsi untuk menggenerate kadar rgb nya tidak lebih dari 255
+    // math.round berguna sebagai menjadikan bilangan bulat yang defaultnya menjadi bilangan desimal
+    const xPos = Math.round((event.clientX / window.innerWidth) * 255);
+    // POSISI MOUSE Y
+    const yPos = Math.round((event.clientY / window.innerHeight) * 255);
+    //  memilih bagian mana yang akan diwarnai 
+    document.body.style.backgroundColor = 'rgb(' + xPos + ', ' + yPos + ', 100)';
+});
