@@ -60,7 +60,11 @@
 //         alert('Okee!')
 //     });
 // });
+<<<<<<< HEAD
 // membuat event bubbling ini tidak berfungsi guna untuk element closenya, menggunakan stoppropagation diletakan di akhir script
+=======
+// membuat event bubbling ini tidak berfungsi untuk element closenya, menggunakan stoppropagation diletakan di akhir script
+>>>>>>> ea58ac7fe17d86e399eae9d98e2dcdd9682b3616
 
 const container = document.querySelector('.container');
 container.addEventListener('click', function (e) {
