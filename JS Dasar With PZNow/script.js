@@ -29,15 +29,26 @@
 
 // operasi aritmatika pada JS
 
+// let result = 1 + 2;
+// document.writeln(`<p> 1 + 2 = ` + result + ` </p>`)
+// let originalResult = result;
+
+// result = result - 1;
+// document.writeln(`<h1>` + originalResult + ` - 1 = ` + result + `</h1>`);
+// originalResult = result;
+
+// result = result + 3;
+// document.writeln(`<h2>` + originalResult + ` + 3 = ` + result + `</h2>`)
+
+// TANPA MENGUNAKAN VARIABLE ORIGINAL RESULT YANG DIGUNAKAN UNTUK MENAMPUNG HASIL DARI PROSES ARITMATIKA SEBELUMNYA
 let result = 1 + 2;
-document.writeln(`<p> 1 + 2 = ` + result + ` </p>`)
-let originalResult = result;
+document.writeln(`<h1>` + `1 + 2 = ` + result + ` </h1> `)
+// let originalResult = result;
 
 result = result - 1;
-document.writeln(`<h1>` + originalResult + ` - 1 = ` + result + `</h1>`);
-originalResult = result;
+document.writeln(`<h2>` + `3 - 1 = ` + result + `</h2>`);
 
-result = result + 3;
-document.writeln(`<h2>` + originalResult + ` + 3 = ` + result + `</h2>`)
-
+result = result + 2
+document.writeln(`<h1>` + `2 + 2 =` + result + `</h1>`);
+// originalResult = result;
 
