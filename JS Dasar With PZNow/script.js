@@ -41,14 +41,49 @@
 // document.writeln(`<h2>` + originalResult + ` + 3 = ` + result + `</h2>`)
 
 // TANPA MENGUNAKAN VARIABLE ORIGINAL RESULT YANG DIGUNAKAN UNTUK MENAMPUNG HASIL DARI PROSES ARITMATIKA SEBELUMNYA
-let result = 1 + 2;
-document.writeln(`<h1>` + `1 + 2 = ` + result + ` </h1> `)
-// let originalResult = result;
+// let result = 1 + 2; //3
+// document.writeln(`<h1>` + `1 + 2 = ` + result + ` </h1> `)
+// // let originalResult = result;
 
-result = result - 1;
-document.writeln(`<h2>` + `3 - 1 = ` + result + `</h2>`);
+// //menggunakan augmented assignment 
+// result -= 1; //2
+// document.writeln(`<h2>` + `3 - 1 = ` + result + `</h2>`);
 
-result = result + 2
-document.writeln(`<h1>` + `2 + 2 =` + result + `</h1>`);
+// result = result + 2 //4
+// document.writeln(`<h1>` + `2 + 2 =` + result + `</h1>`);
 // originalResult = result;
+
+// result = result + 2 //6
+// document.writeln(`<h1>` + originalResult + `+ 2 =  ` + result + `</h1>`);
+// originalResult = result;
+
+// result = result + 2 //8
+// document.writeln(`<h1>` + originalResult + `+ 2 =  ` + result + `</h1>`);
+// originalResult = result;
+
+// result = result * 2 //16
+// document.writeln(`<h1>` + originalResult + ` x 2 =  ` + result + `</h1>`);
+// originalResult = result;
+
+
+// Operasi Unary
+
+
+let result = 1;
+
+result = 1;
+document.writeln(`<p>` + result + `</p>`);
+
+result--; //result - result = 1; result -= 1; 0
+document.writeln(`<p>` + result + `</p>`);
+
+result++; //result + result = 1; result += 1; 1
+document.writeln(`<p>` + result + `</p>`);
+
+result = -result; // -1
+document.writeln(`<p>` + result + `</p>`)
+
+result++; //+1
+document.writeln(`<p>` + result + `</p>`)
+
 
