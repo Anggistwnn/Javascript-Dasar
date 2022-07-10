@@ -67,8 +67,6 @@
 
 
 // Operasi Unary
-
-
 let result = 1;
 
 result = 1;
