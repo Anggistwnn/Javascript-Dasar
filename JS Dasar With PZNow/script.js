@@ -45,7 +45,7 @@
 // document.writeln(`<h1>` + `1 + 2 = ` + result + ` </h1> `)
 // // let originalResult = result;
 
-// //menggunakan augmented assignment 
+// //menggunakan augmented assignment
 // result -= 1; //2
 // document.writeln(`<h2>` + `3 - 1 = ` + result + `</h2>`);
 
@@ -67,21 +67,35 @@
 
 
 // Operasi Unary
-let result = 1;
+// let result = 1;
 
-result = 1;
-document.writeln(`<p>` + result + `</p>`);
+// result = 1;
+// document.writeln(`<p>` + result + `</p>`);
 
-result--; //result - result = 1; result -= 1; 0
-document.writeln(`<p>` + result + `</p>`);
+// result--; //result - result = 1; result -= 1; 0
+// document.writeln(`<p>` + result + `</p>`);
 
-result++; //result + result = 1; result += 1; 1
-document.writeln(`<p>` + result + `</p>`);
+// result++; //result + result = 1; result += 1; 1
+// document.writeln(`<p>` + result + `</p>`);
 
-result = -result; // -1
+// result = -result; // -1
+// document.writeln(`<p>` + result + `</p>`)
+
+// result++; //+1
+// document.writeln(`<p>` + result + `</p>`)
+
+// KODE OPERASI PERBANDINGAN
+let result = 5 == "5";
 document.writeln(`<p>` + result + `</p>`)
 
-result++; //+1
+result = 5 === "5";
+document.writeln(`<p>` + result + `</P>`)
+
+result = 5 < 10;
 document.writeln(`<p>` + result + `</p>`)
+
+result = 5 > 10;
+document.writeln(`<p>` + result + `</p>`)
+
 
 
