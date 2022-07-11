@@ -86,7 +86,7 @@
 
 // KODE OPERASI PERBANDINGAN
 let result = 5 == "5";
-document.writeln(`<p>` + result + `</p>`)
+document.writeln(`<p>  result  </p>`)
 
 result = 5 === "5";
 document.writeln(`<p>` + result + `</P>`)
@@ -97,5 +97,21 @@ document.writeln(`<p>` + result + `</p>`)
 result = 5 > 10;
 document.writeln(`<p>` + result + `</p>`)
 
+// OPERATOR LOGIKA
+// const nilaiUjian = 70;
+// const nilaiAbsensi = 90;
+
+// const lulusUjian = nilaiUjian > 75;
+
+// const lulusAbsensi = nilaiAbsensi > 75;
+
+// const lulus = lulusUjian || lulusAbsensi;
+// document.writeln(lulus);
+
+// // consol
+// console.debug(lulus);
+// console.info(lulus);
+// console.warn(lulus);
+// console.error(lulus);
 
 
