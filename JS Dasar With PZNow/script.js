@@ -85,17 +85,17 @@
 // document.writeln(`<p>` + result + `</p>`)
 
 // KODE OPERASI PERBANDINGAN
-let result = 5 == "5";
-document.writeln(`<p>  result  </p>`)
+// let result = 5 == "5";
+// document.writeln(`<p>  result  </p>`)
 
-result = 5 === "5";
-document.writeln(`<p>` + result + `</P>`)
+// result = 5 === "5";
+// document.writeln(`<p>` + result + `</P>`)
 
-result = 5 < 10;
-document.writeln(`<p>` + result + `</p>`)
+// result = 5 < 10;
+// document.writeln(`<p>` + result + `</p>`)
 
-result = 5 > 10;
-document.writeln(`<p>` + result + `</p>`)
+// result = 5 > 10;
+// document.writeln(`<p>` + result + `</p>`)
 
 // OPERATOR LOGIKA
 // const nilaiUjian = 70;
@@ -113,5 +113,24 @@ document.writeln(`<p>` + result + `</p>`)
 // console.info(lulus);
 // console.warn(lulus);
 // console.error(lulus);
+
+// STRING TEMPLATE 1
+
+const name = 'Anggi Setiawan';
+const firstName = "Anggi";
+const lastName = "Setiawan"
+
+const template = `name: ${name}`;
+console.log(template);
+
+// STRING TEMPLATE 2
+
+const nilai = 70;
+
+const template2 = `name: ${firstName}, lulus: ${nilai > 75}`
+console.log(template2);
+
+// STRING TEMPLATE 3
+
 
 
