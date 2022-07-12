@@ -91,7 +91,7 @@
 // result = 5 === "5";
 // document.writeln(`<p>` + result + `</P>`)
 
-// result = 5 < 10;
+// result = 5 <p 10;
 // document.writeln(`<p>` + result + `</p>`)
 
 // result = 5 > 10;
@@ -131,6 +131,51 @@ const template2 = `name: ${firstName}, lulus: ${nilai > 75}`
 console.log(template2);
 
 // STRING TEMPLATE 3
+
+// const multiline = `Alhamdulillah hari ini dapet banyak :)`
+// document.writeln(`<pre>`)
+// document.writeln(multiline)
+// document.writeln(`</pre>`)
+
+
+// KONVERSI STRING DAN NUMBER
+// const value2 = 1;
+// const value1 = parseInt('1');
+
+// const sum = value1 + value2;
+
+// document.writeln(`<p> ${sum} </p>`)
+
+// ParseInt mengubah bilangan menjadi integer dan akan selalu dibulatkan (mengabaikan angka lain dibelakang koma (pecahan))
+// document.writeln(`<p> ${parseInt("2.1")} </p>`)
+// parsefloat menerima bilangan pecahan
+// document.writeln(`<p> ${parseFloat("2.1")} </p>`)
+// Number bisa fleksibel bisa integer atau memiliki pecahan
+// document.writeln(`<p> ${Number("1.1")}`)
+
+
+const a = 1;
+const b = 1;
+// jika ingin mengganti tipe data gunakan toString
+const total = a.toString() + b.toString();
+// document.writeln(`<p> ${total} </p>`)
+
+// NaN (jika ternyata data string yang kita coba konversi bukanlah data yg valid) 
+document.writeln(`<p> ${parseInt("1.salah")} </p>`)
+document.writeln(`<p> ${parseFloat("oke.1")} </p>`)
+
+// Number tidak ada toleransi bagi data yang salah akan selalu memberikan perintah NaN berbeda dengan int dan float
+document.writeln(`<p> ${Number("1.sfs")} </p>`)
+
+// dibawah ini adalah kode operasi pada NaN 
+const first = Number("1.Setiawan");
+const last = Number("1.1")
+
+const hasil = first + last;
+document.writeln(`<pre> ${hasil} </pre>`)
+// function isNaN() (digunakan untuk mengecek apakah itu NaN yang mengembalikan nilai boolean)
+document.writeln(isNaN(last))
+
 
 
 
