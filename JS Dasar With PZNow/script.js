@@ -116,19 +116,19 @@
 
 // STRING TEMPLATE 1
 
-const name = 'Anggi Setiawan';
-const firstName = "Anggi";
-const lastName = "Setiawan"
+// const name = 'Anggi Setiawan';
+// const firstName = "Anggi";
+// const lastName = "Setiawan"
 
-const template = `name: ${name}`;
-console.log(template);
+// const template = `name: ${name}`;
+// console.log(template);
 
-// STRING TEMPLATE 2
+// // STRING TEMPLATE 2
 
-const nilai = 70;
+// const nilai = 70;
 
-const template2 = `name: ${firstName}, lulus: ${nilai > 75}`
-console.log(template2);
+// const template2 = `name: ${firstName}, lulus: ${nilai > 75}`
+// console.log(template2);
 
 // STRING TEMPLATE 3
 
@@ -154,28 +154,32 @@ console.log(template2);
 // document.writeln(`<p> ${Number("1.1")}`)
 
 
-const a = 1;
-const b = 1;
+// const a = 1;
+// const b = 1;
 // jika ingin mengganti tipe data gunakan toString
-const total = a.toString() + b.toString();
+// const total = a.toString() + b.toString();
 // document.writeln(`<p> ${total} </p>`)
 
-// NaN (jika ternyata data string yang kita coba konversi bukanlah data yg valid) 
-document.writeln(`<p> ${parseInt("1.salah")} </p>`)
-document.writeln(`<p> ${parseFloat("oke.1")} </p>`)
+// NaN (jika ternyata data string yang kita coba konversi bukanlah data yg valid)
+// document.writeln(`<p> ${parseInt("1.salah")} </p>`)
+// document.writeln(`<p> ${parseFloat("oke.1")} </p>`)
 
 // Number tidak ada toleransi bagi data yang salah akan selalu memberikan perintah NaN berbeda dengan int dan float
-document.writeln(`<p> ${Number("1.sfs")} </p>`)
+// document.writeln(`<p> ${Number("1.sfs")} </p>`)
 
-// dibawah ini adalah kode operasi pada NaN 
-const first = Number("1.Setiawan");
-const last = Number("1.1")
+// dibawah ini adalah kode operasi pada NaN
+// const first = Number("1.Setiawan");
+// const last = Number("1.1")
 
-const hasil = first + last;
-document.writeln(`<pre> ${hasil} </pre>`)
+// const hasil = first + last;
+// document.writeln(`<pre> ${hasil} </pre>`)
 // function isNaN() (digunakan untuk mengecek apakah itu NaN yang mengembalikan nilai boolean)
-document.writeln(isNaN(last))
+// document.writeln(isNaN(last))
 
+// file sololearn
+var c = document.getElementById("canvas1");
+var ctx = c.getContext("2d");
+ctx.fillRect(20, 20, 100, 100);
 
 
 
