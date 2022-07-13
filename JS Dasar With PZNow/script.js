@@ -176,10 +176,24 @@
 // function isNaN() (digunakan untuk mengecek apakah itu NaN yang mengembalikan nilai boolean)
 // document.writeln(isNaN(last))
 
-// file sololearn
-var c = document.getElementById("canvas1");
-var ctx = c.getContext("2d");
-ctx.fillRect(20, 20, 100, 100);
+// sololearn course
+// var c = document.getElementById("canvas1");
+// var ctx = c.getContext("2d");
+// ctx.fillRect(20, 20, 100, 100);
+
+// TIPE DATA ARRAY
+const mahasiswa1 = ["anggi", "setiawan", "adewaliya"];
+// menambhakna array
+mahasiswa1.push("raihani");
+// menghapus array
+delete mahasiswa1[0];
+// menganti isi array
+mahasiswa1[1] = "ananda sahwa";
+console.table(mahasiswa1);
+
+
+
+
 
 
 
