@@ -182,12 +182,21 @@
 // ctx.fillRect(20, 20, 100, 100);
 
 // TIPE DATA ARRAY
-const mahasiswa1 = ["anggi", "setiawan", "adewaliya"];
+
+// OPERASI ARRAY
+// array.push(value)
+// array.length
+// array[index]
+// Array[index] = value
+// delete array[index]
+
+const mahasiswa1 = ["anggi", "setiawan", "rosiana"];
 // menambhakna array
 mahasiswa1.push("raihani");
 // menghapus array
 delete mahasiswa1[0];
 // menganti isi array
+console.log(mahasiswa1);
 mahasiswa1[1] = "ananda sahwa";
 console.table(mahasiswa1);
 
