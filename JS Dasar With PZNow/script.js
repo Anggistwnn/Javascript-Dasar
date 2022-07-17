@@ -197,7 +197,7 @@ mahasiswa1.push("raihani");
 delete mahasiswa1[0];
 // menganti isi array
 console.log(mahasiswa1);
-mahasiswa1[1] = "ananda";
+mahasiswa1[1] = "adewaliyaaa";
 console.table(mahasiswa1);
 
 
